@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { Zoom } from 'react-slideshow-image'
+import { useParallax } from 'react-scroll-parallax'
+
 import 'react-slideshow-image/dist/styles.css'
 import blendz from '../assets/images/naroBlends.jpeg'
 import jesus from '../assets/images/jesus.jpg'
@@ -18,6 +20,22 @@ const Practice2 = () => {
   const state2 = 'transition-opacity duration-1000 ease-out opacity-100'
   const [load, setLoadState] = useState(state1)
 
+  // const parallax = useParallax({
+  //   // rotate: [0, 360],
+  //   speed: 100,
+  // })
+  const mage = useParallax({
+    scale: [1.2, 0.8, 'easeInQuad'],
+  })
+
+  // const frog = useParallax({
+  //   scaleX: [1, 0, 'easeInQuad'],
+  // })
+
+  const moon = useParallax({
+    scale: [1.5, 1, 'easeInQuad'],
+  })
+
   const onLoad = () => {
     setLoadState(state2)
   }
@@ -31,7 +49,7 @@ const Practice2 = () => {
         </div>
         <div className='flex justify-center'>
           <div className='md:flex md:justify-center mt-3'>
-            <div className=''>
+            <div className='' ref={mage.ref}>
               <img
                 alt=''
                 src={blendz}
@@ -56,7 +74,10 @@ const Practice2 = () => {
         </div>
 
         <div className='mt-3'>
-          <div className='text-white flex justify-center text-lg'>
+          <div
+            className='text-white flex justify-center text-lg'
+            ref={moon.ref}
+          >
             Get lined up. 2641 S State.
           </div>
 

@@ -2,6 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client'
 import { BrowserRouter } from 'react-router-dom'
+import { ParallaxProvider } from 'react-scroll-parallax'
+
 import './index.css'
 import App from './App'
 
@@ -15,7 +17,9 @@ root.render(
   <React.StrictMode>
     <ApolloProvider client={client}>
       <BrowserRouter>
-        <App />
+        <ParallaxProvider>
+          <App />
+        </ParallaxProvider>
       </BrowserRouter>
     </ApolloProvider>
   </React.StrictMode>

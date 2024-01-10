@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ubiquitous-engine/static/css/main.ac7f754b.css",
-    "main.js": "/ubiquitous-engine/static/js/main.854a4515.js",
+    "main.css": "/ubiquitous-engine/static/css/main.f5ac7680.css",
+    "main.js": "/ubiquitous-engine/static/js/main.efd8197a.js",
     "static/media/img6.jpeg": "/ubiquitous-engine/static/media/img6.791df180aa8f91246fa9.jpeg",
     "static/media/img3.jpeg": "/ubiquitous-engine/static/media/img3.eb39ef17e54961e284bc.jpeg",
     "static/media/img2.jpeg": "/ubiquitous-engine/static/media/img2.4fd5eb8d46e1a829c770.jpeg",
@@ -9,11 +9,11 @@
     "static/media/jesus.jpg": "/ubiquitous-engine/static/media/jesus.803ceffa1c0c3a245de6.jpg",
     "static/media/naroBlends.jpeg": "/ubiquitous-engine/static/media/naroBlends.47f5a20624be6d519a63.jpeg",
     "index.html": "/ubiquitous-engine/index.html",
-    "main.ac7f754b.css.map": "/ubiquitous-engine/static/css/main.ac7f754b.css.map",
-    "main.854a4515.js.map": "/ubiquitous-engine/static/js/main.854a4515.js.map"
+    "main.f5ac7680.css.map": "/ubiquitous-engine/static/css/main.f5ac7680.css.map",
+    "main.efd8197a.js.map": "/ubiquitous-engine/static/js/main.efd8197a.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac7f754b.css",
-    "static/js/main.854a4515.js"
+    "static/css/main.f5ac7680.css",
+    "static/js/main.efd8197a.js"
   ]
 }

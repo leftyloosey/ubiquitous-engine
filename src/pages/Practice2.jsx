@@ -1,5 +1,4 @@
 import { useState } from 'react'
-
 import { Zoom } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
 import blendz from '../assets/images/naroBlends.jpeg'
@@ -9,6 +8,8 @@ import img1 from '../assets/images/gallery/img1.jpeg'
 import img2 from '../assets/images/gallery/img2.jpeg'
 import img3 from '../assets/images/gallery/img3.jpeg'
 import img6 from '../assets/images/gallery/img6.jpeg'
+
+import TheMap from '../components/TheMap'
 
 const Practice2 = () => {
   const images = [jesus, img1, img2, img3, img6]
@@ -28,7 +29,6 @@ const Practice2 = () => {
           <div className=''>SignUp</div>
           <div className=''>Merch</div>
         </div>
-
         <div className='flex justify-center'>
           <div className='md:flex md:justify-center mt-3'>
             <div className=''>
@@ -64,6 +64,9 @@ const Practice2 = () => {
             <p className='text-white flex justify-center rounded-full bg-slate-600 w-16 h-8 pt-1 font-bold'>
               Book
             </p>
+          </div>
+          <div>
+            <TheMap />
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ubiquitous-engine/static/css/main.f7b4ec44.css",
-    "main.js": "/ubiquitous-engine/static/js/main.a9d5448a.js",
+    "main.js": "/ubiquitous-engine/static/js/main.bb8cf106.js",
     "static/media/img6.jpeg": "/ubiquitous-engine/static/media/img6.791df180aa8f91246fa9.jpeg",
     "static/media/img3.jpeg": "/ubiquitous-engine/static/media/img3.eb39ef17e54961e284bc.jpeg",
     "static/media/img2.jpeg": "/ubiquitous-engine/static/media/img2.4fd5eb8d46e1a829c770.jpeg",
@@ -10,10 +10,10 @@
     "static/media/naroBlends.jpeg": "/ubiquitous-engine/static/media/naroBlends.47f5a20624be6d519a63.jpeg",
     "index.html": "/ubiquitous-engine/index.html",
     "main.f7b4ec44.css.map": "/ubiquitous-engine/static/css/main.f7b4ec44.css.map",
-    "main.a9d5448a.js.map": "/ubiquitous-engine/static/js/main.a9d5448a.js.map"
+    "main.bb8cf106.js.map": "/ubiquitous-engine/static/js/main.bb8cf106.js.map"
   },
   "entrypoints": [
     "static/css/main.f7b4ec44.css",
-    "static/js/main.a9d5448a.js"
+    "static/js/main.bb8cf106.js"
   ]
 }

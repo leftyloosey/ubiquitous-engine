@@ -23,17 +23,9 @@ const Practice2 = () => {
   const state2 = 'transition-opacity duration-1000 ease-out opacity-100'
   const [load, setLoadState] = useState(state1)
 
-  // const parallax = useParallax({
-  //   // rotate: [0, 360],
-  //   speed: 100,
-  // })
   const mage = useParallax({
     scale: [1.2, 0.8, 'easeInQuad'],
   })
-
-  // const frog = useParallax({
-  //   scaleX: [1, 0, 'easeInQuad'],
-  // })
 
   const moon = useParallax({
     scale: [1.5, 1, 'easeInQuad'],

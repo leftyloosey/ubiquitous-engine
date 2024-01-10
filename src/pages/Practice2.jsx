@@ -28,8 +28,12 @@ const Practice2 = () => {
   })
 
   const moon = useParallax({
-    scale: [1.5, 1, 'easeInQuad'],
+    scale: [0.8, 1.2, 'easeInQuad'],
   })
+
+  // const moon = useParallax({
+  //   scale: [1.5, 1, 'easeInQuad'],
+  // })
 
   const onLoad = () => {
     setLoadState(state2)
@@ -70,7 +74,7 @@ const Practice2 = () => {
 
         <div className='mt-3'>
           <div
-            className='text-white flex justify-center text-lg'
+            className='text-white flex justify-center text-2xl'
             ref={moon.ref}
           >
             Get lined up. 2641 S State.

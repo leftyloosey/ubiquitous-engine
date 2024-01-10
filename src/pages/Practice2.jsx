@@ -9,12 +9,15 @@ import jesus from '../assets/images/jesus.jpg'
 import img1 from '../assets/images/gallery/img1.jpeg'
 import img2 from '../assets/images/gallery/img2.jpeg'
 import img3 from '../assets/images/gallery/img3.jpeg'
+import img4 from '../assets/images/gallery/img4.jpeg'
 import img6 from '../assets/images/gallery/img6.jpeg'
+import img7 from '../assets/images/gallery/img7.jpeg'
+import img8 from '../assets/images/gallery/img8.jpeg'
 
 import TheMap from '../components/TheMap'
 
 const Practice2 = () => {
-  const images = [jesus, img1, img2, img3, img6]
+  const images = [jesus, img2, img7, img3, img4, img1, img8, img6]
 
   const state1 = 'transition-opacity duration-1000 ease-out opacity-10'
   const state2 = 'transition-opacity duration-1000 ease-out opacity-100'

@@ -17,13 +17,10 @@ const Practice2 = () => {
   // ]
   return (
     <div className='bg-black font-ubuntu'>
-      {/* <div className='flex flex-col mt-3'> */}
       <div className=''>
-        <div className='flex justify-center space-x-6 text-slate-400 text-sm opacity-80'>
+        <div className='flex justify-center space-x-6 text-slate-400 text-sm opacity-80 mt-2'>
           <div className=''>SignUp</div>
           <div className=''>Merch</div>
-          {/* <div className=''>SIGN-UP</div>
-          <div className=''>MERCH</div> */}
         </div>
 
         <div className='flex justify-center'>
@@ -62,14 +59,6 @@ const Practice2 = () => {
               Book
             </p>
           </div>
-          {/* <div className='text-white flex justify-center'>
-            GET LINED UP. FEEL LIKE A KING.
-          </div>
-          <div className='flex justify-center mt-3'>
-            <p className='text-white flex justify-center rounded-full bg-slate-600 w-16'>
-              BOOK
-            </p>
-          </div> */}
         </div>
       </div>
     </div>

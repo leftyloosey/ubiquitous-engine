@@ -18,15 +18,16 @@ const Practice2 = () => {
   return (
     <div className='bg-black font-ubuntu'>
       {/* <div className='flex flex-col mt-3'> */}
-      <div className='container mx-auto'>
+      <div className=''>
         <div className='flex justify-center space-x-6 text-slate-400 text-sm opacity-80'>
           <div className=''>SignUp</div>
           <div className=''>Merch</div>
           {/* <div className=''>SIGN-UP</div>
           <div className=''>MERCH</div> */}
         </div>
-        <div className=''>
-          <div className='flex md:justify-center mt-3'>
+
+        <div className='flex justify-center'>
+          <div className='md:flex md:justify-center mt-3'>
             <div className=''>
               <img
                 alt=''
@@ -34,9 +35,7 @@ const Practice2 = () => {
                 className='invert object-cover h-3/4 w-96'
               ></img>
             </div>
-
-            {/* <div className='object-cover h-96 w-96 rounded-l-full lg:rounded-full md:rounded-full'> */}
-            <div className='h-96 w-96'>
+            <div className='h-96 w-96 mb-3'>
               <Zoom scale={0.7} indicators={true}>
                 {images.map((each, index) => (
                   <div key={index} style={{ width: '100%' }}>
@@ -44,20 +43,12 @@ const Practice2 = () => {
                       alt=''
                       style={{ objectFit: 'cover', width: '100%' }}
                       src={each}
-                      className='rounded-l-full lg:rounded-full md:rounded-full max-h-96'
+                      className='rounded-full  max-h-96'
                     />
                   </div>
                 ))}
               </Zoom>
             </div>
-
-            {/* <div className=''>
-            <img
-              alt=''
-              src={jesus}
-              className='border-solid border-white object-cover h-96 w-96 rounded-l-full lg:rounded-full md:rounded-full'
-            ></img>
-          </div> */}
           </div>
         </div>
 

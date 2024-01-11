@@ -23,9 +23,15 @@ const blendLink =
 const Practice2 = () => {
   const images = [jesus, img2, img7, img3, img4, img1, img8, img6]
 
-  const state1 = 'transition-opacity duration-1000 ease-out opacity-10'
-  const state2 = 'transition-opacity duration-1000 ease-out opacity-100'
-  const [load, setLoadState] = useState(state1)
+  const loadState1 = 'transition-opacity duration-1000 ease-out opacity-10'
+  const loadState2 = 'transition-opacity duration-1000 ease-out opacity-100'
+  const [load, setLoadState] = useState(loadState1)
+
+  const clickState1 =
+    'text-white flex justify-center rounded-full bg-slate-600 w-16 h-8 pt-1 font-bold hover:bg-slate-400 hover:text-black'
+  const clickState2 =
+    'flex justify-center rounded-full w-16 h-8 pt-1 font-bold bg-slate-400 text-black'
+  const [click, setClickState] = useState(clickState1)
 
   const mage = useParallax({
     scale: [1.2, 0.8, 'easeInQuad'],
@@ -36,8 +42,10 @@ const Practice2 = () => {
   })
 
   const onLoad = () => {
-    setLoadState(state2)
+    setLoadState(loadState2)
   }
+
+  const onClick = () => {}
 
   return (
     <div className='bg-black font-ubuntu'>
@@ -85,8 +93,11 @@ const Practice2 = () => {
           </div>
 
           <div className='flex justify-center mt-3'>
-            <p className='text-white flex justify-center rounded-full bg-slate-600 w-16 h-8 pt-1 font-bold hover:bg-slate-400 hover:text-black'>
-              <Link to={blendLink}>Book</Link>
+            <p className={`${click}`}>
+              {/* <p className='text-white flex justify-center rounded-full bg-slate-600 w-16 h-8 pt-1 font-bold hover:bg-slate-400 hover:text-black'> */}
+              <Link onClick={onClick} to={blendLink}>
+                Book
+              </Link>
             </p>
           </div>
           <div>

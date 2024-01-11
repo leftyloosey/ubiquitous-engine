@@ -45,7 +45,9 @@ const Practice2 = () => {
     setLoadState(loadState2)
   }
 
-  const onClick = () => {}
+  const onClick = () => {
+    setClickState(clickState2)
+  }
 
   return (
     <div className='bg-black font-ubuntu'>

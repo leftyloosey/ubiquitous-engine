@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { Zoom } from 'react-slideshow-image'
 import { useParallax } from 'react-scroll-parallax'
 
@@ -16,6 +17,9 @@ import img8 from '../assets/images/gallery/img8.jpeg'
 
 import TheMap from '../components/TheMap'
 
+const blendLink =
+  'https://booksy.com/en-us/781756_88blendz-studio_barber-shop_37796_salt-lake-city#ba_s=vl_1'
+
 const Practice2 = () => {
   const images = [jesus, img2, img7, img3, img4, img1, img8, img6]
 
@@ -31,10 +35,6 @@ const Practice2 = () => {
     scale: [0.8, 1.2, 'easeInQuad'],
   })
 
-  // const moon = useParallax({
-  //   scale: [1.5, 1, 'easeInQuad'],
-  // })
-
   const onLoad = () => {
     setLoadState(state2)
   }
@@ -43,8 +43,12 @@ const Practice2 = () => {
     <div className='bg-black font-ubuntu'>
       <div className={`${load}`} onLoad={onLoad}>
         <div className='flex justify-center space-x-6 text-slate-400 text-sm opacity-80 mt-2'>
-          <div className=''>SignUp</div>
-          <div className=''>Merch</div>
+          <div className='hover:text-slate-300'>
+            <Link to='/signuplist'>SignUp</Link>
+          </div>
+          <div className='hover:text-slate-300'>
+            <Link to='/merch'>Merch</Link>
+          </div>
         </div>
         <div className='flex justify-center'>
           <div className='md:flex md:justify-center mt-3'>
@@ -81,8 +85,8 @@ const Practice2 = () => {
           </div>
 
           <div className='flex justify-center mt-3'>
-            <p className='text-white flex justify-center rounded-full bg-slate-600 w-16 h-8 pt-1 font-bold'>
-              Book
+            <p className='text-white flex justify-center rounded-full bg-slate-600 w-16 h-8 pt-1 font-bold hover:bg-slate-400 hover:text-black'>
+              <Link to={blendLink}>Book</Link>
             </p>
           </div>
           <div>

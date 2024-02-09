@@ -1,6 +1,5 @@
 import { APIProvider, Map, Marker } from '@vis.gl/react-google-maps'
 
-// const API_KEY = 'AIzaSyDX4Zq5tyBnojTru-v-1iRKto_1PAYAg_I'
 const HOBART = 'AIzaSyC0zTkwcKzG9r-sF6Xwtj3-WDgwSNDwdZ4'
 
 const lat = 40.713177524497084

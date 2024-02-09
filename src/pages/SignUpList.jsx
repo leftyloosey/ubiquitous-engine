@@ -1,19 +1,26 @@
 import { useState } from 'react'
 import { useQuery, gql } from '@apollo/client'
 
-const query = gql`
+// const query = gql`
+//   query ClientList {
+//     clientList {
+//       phone
+//       name
+//       email
+//       id
+//     }
+//   }
+// `
+const login = gql`
   query ClientList {
     clientList {
-      phone
       name
-      email
-      id
     }
   }
 `
 
 const SignUpList = () => {
-  const { data } = useQuery(query)
+  const { data } = useQuery(login)
   console.log(data)
 
   const [name, setName] = useState('')

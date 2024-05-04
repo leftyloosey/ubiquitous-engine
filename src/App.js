@@ -11,7 +11,8 @@ function App() {
     <>
       <Routes>
         {/* <Route path='/' element={<TheMap />} /> */}
-        <Route path='/' element={<Practice2 />} />
+        <Route path='/' element={<ReadImage />} />
+        {/* <Route path='/' element={<Practice2 />} /> */}
         {/* <Route index element={<Home />} /> */}
         <Route path='/signuplist' element={<SignUpList />} />
         <Route path='/practice' element={<Practice />} />
@@ -19,7 +20,8 @@ function App() {
         <Route path='/merch' element={<Merch />} />
         <Route path='/readimage' element={<ReadImage />} />
         {/* <Route path='*' element={<Home />} /> */}
-        <Route path='*' element={<Practice2 />} />
+        <Route path='*' element={<ReadImage />} />
+        {/* <Route path='*' element={<Practice2 />} /> */}
       </Routes>
     </>
   )
